@@ -3,7 +3,7 @@
 @namespace github.com/Coin-233/bgm-vndb-skin
 @homepageURL https://github.com/Coin-233/bgm-vndb-skin
 @updateURL https://raw.githubusercontent.com/Coin-233/bgm-vndb-skin/main/bgm-vndb-skin.user.styl
-@version 1.0.0
+@version 1.0.1
 @description 把vndb的皮肤给抄了过来(
 @author Coin-233
 @preprocessor stylus
@@ -366,140 +366,141 @@ domain("bangumi.tv") {
 		}
 	}
 
-
-	body {
-		background-color: var(--bodybg) !important;
-	}
-	div#headerNeue2,
-	div.subjectNav,
-	div.headerContainer,
-	div.user_box {
-		background: #ffffff00 !important;
-		border-bottom: 0px solid #ffffff00 !important;
-		box-shadow: 0px 0 0px 1px rgba(0, 0, 0, 0.0) !important
-	}
-	html a.l,
-	html a.l:link,
-	html a.l:visited,
-	html a.l:active,
-	html a:link,
-	html a:active,
-	html a:visited,
-	html .tip,
-	html #subject_detail #subject_summary,
-	html h2.subtitle,
-	html #columnSubjectA h2,
-	html #columnInSubjectA h2,
-	html #entry_list div.item .content,
-	html #comment_box .text,
-	html #comment_box .text_pm,
-	html .comment_box {
-		color: var(--maintext)!important
-	}
-	html a.tip,
-	html a.tip:link,
-	html a.tip:visited,
-	html a.tip:active,
-	html #timeline ul li span.info,
-	small.feed,
-	html ul#infobox li,
-	{
-		color: var(--grayedout) !important
-	}
-	/* 	边框 */
-	div#prgManager,
-	div.sidePanelHome,
-	blockquote.intro,
-	div#headerSearch,
-	div.SidePanel,
-	div#anime,
-	div#game,
-	div#book,
-	div#real,
-	div#music ul.network_service,
-	div.menu_inner,
-	div.userSynchronize,
-	div.sidePanelHome,
-	div#subject_detail {
-		border: 1px solid var(--border) !important
-	}
-	div.sidePanelHome {
-		box-shadow: none !important
-	}
-	/* 	底色 */
-	div#prgManager,
-	div#prgManagerHeader,
-	div.coverList,
-	/* 	h2.subtitle, */
-	li.tip,
-	div#columnTimelineInnerB,
-	ul#timelineTabs,
-	div.comment,
-	div#headerSearch,
-	blockquote.intro,
-	div.SidePanel,
-	div#anime,
-	div#game,
-	div#book,
-	div#music,
-	div#real,
-	ul.network_service,
-	div.menu_inner,
-	div.userSynchronize,
-	div.sidePanelHome,
-	div#subject_detail {
-		background: var(--boxbg) !important;
-	}
-	div.subject_section,
-	div.text,
-	div#comment_list,
-	div#columnSubjectHomeA {
-		background: var(--boxbg) !important;
-		border: var(--border) !important;
-		border-radius: 15px;
-	}
-	/* 	透明层 */
-	div.infoWrapper_tv.hidden,
-	div#prgManagerMain,
-	div.header,
-	ul#prgSubjectList,
-	div#columnTimelineInnerWrapper,
-	div.inner,
-	div.moreEp,
-	div.TsukkmiBox,
-	textarea#SayInput,
-	div.card,
-	div.container,
-	div.subject_tag_section,
-	div#ChartWarpper,
-	div.infobox_expand,
-	div.modifyTool,
-	div#sliderContainer {
-		background: #ffffff00 !important
-	}
-	#timeline h4.Header,
-	#timeline ul li,
-	#timeline ul li {
-		margin: 0;
-		padding: 0
-	}
-	div#anime,
-	div#game,
-	div#book,
-	div#music,
-	div#real {
-		margin: 5px 0 !important;
-		border-radius: 15px
-	}
-	ul.network_service {
-		border-radius: 10px
-	}
-	div.sidePanelHome,
-	div#subject_detail {
-		border-radius: 15px
-	}
-	#columnHomeA #home_calendar,
-	#columnHomeA #home_tml {
-		border: 0px
+	if not skin=='foobar' {
+		body {
+			background-color: var(--bodybg) !important;
+		}
+		div#headerNeue2,
+		div.subjectNav,
+		div.headerContainer,
+		div.user_box {
+			background: #ffffff00 !important;
+			border-bottom: 0px solid #ffffff00 !important;
+			box-shadow: 0px 0 0px 1px rgba(0, 0, 0, 0.0) !important
+		}
+		html a.l,
+		html a.l:link,
+		html a.l:visited,
+		html a.l:active,
+		html a:link,
+		html a:active,
+		html a:visited,
+		html .tip,
+		html #subject_detail #subject_summary,
+		html h2.subtitle,
+		html #columnSubjectA h2,
+		html #columnInSubjectA h2,
+		html #entry_list div.item .content,
+		html #comment_box .text,
+		html #comment_box .text_pm,
+		html .comment_box {
+			color: var(--maintext)!important
+		}
+		html a.tip,
+		html a.tip:link,
+		html a.tip:visited,
+		html a.tip:active,
+		html #timeline ul li span.info,
+		small.feed,
+		html ul#infobox li,
+		{
+			color: var(--grayedout) !important
+		}
+		/* 	边框 */
+		div#prgManager,
+		div.sidePanelHome,
+		blockquote.intro,
+		div#headerSearch,
+		div.SidePanel,
+		div#anime,
+		div#game,
+		div#book,
+		div#real,
+		div#music ul.network_service,
+		div.menu_inner,
+		div.userSynchronize,
+		div.sidePanelHome,
+		div#subject_detail {
+			border: 1px solid var(--border) !important
+		}
+		div.sidePanelHome {
+			box-shadow: none !important
+		}
+		/* 	底色 */
+		div#prgManager,
+		div#prgManagerHeader,
+		div.coverList,
+		/* 	h2.subtitle, */
+		li.tip,
+		div#columnTimelineInnerB,
+		ul#timelineTabs,
+		div.comment,
+		div#headerSearch,
+		blockquote.intro,
+		div.SidePanel,
+		div#anime,
+		div#game,
+		div#book,
+		div#music,
+		div#real,
+		ul.network_service,
+		div.menu_inner,
+		div.userSynchronize,
+		div.sidePanelHome,
+		div#subject_detail {
+			background: var(--boxbg) !important;
+		}
+		div.subject_section,
+		div.text,
+		div#comment_list,
+		div#columnSubjectHomeA {
+			background: var(--boxbg) !important;
+			border: var(--border) !important;
+			border-radius: 15px;
+		}
+		/* 	透明层 */
+		div.infoWrapper_tv.hidden,
+		div#prgManagerMain,
+		div.header,
+		ul#prgSubjectList,
+		div#columnTimelineInnerWrapper,
+		div.inner,
+		div.moreEp,
+		div.TsukkmiBox,
+		textarea#SayInput,
+		div.card,
+		div.container,
+		div.subject_tag_section,
+		div#ChartWarpper,
+		div.infobox_expand,
+		div.modifyTool,
+		div#sliderContainer {
+			background: #ffffff00 !important
+		}
+		#timeline h4.Header,
+		#timeline ul li,
+		#timeline ul li {
+			margin: 0;
+			padding: 0
+		}
+		div#anime,
+		div#game,
+		div#book,
+		div#music,
+		div#real {
+			margin: 5px 0 !important;
+			border-radius: 15px
+		}
+		ul.network_service {
+			border-radius: 10px
+		}
+		div.sidePanelHome,
+		div#subject_detail {
+			border-radius: 15px
+		}
+		#columnHomeA #home_calendar,
+		#columnHomeA #home_tml {
+			border: 0px
+		}
 	}
 }
