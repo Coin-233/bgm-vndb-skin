@@ -1,6 +1,7 @@
 # bgm-vndb-skin
 
-就是把vndb的皮肤给抄了过来而已(
+就是把vndb的皮肤给抄了过来而已(  
+还有一些小功能
 
 
 <a href="https://raw.githubusercontent.com/Coin-233/bgm-vndb-skin/main/bgm-vndb-skin.user.styl">
