@@ -3,7 +3,7 @@
 @namespace github.com/Coin-233/bgm-vndb-skin
 @homepageURL https://github.com/Coin-233/bgm-vndb-skin
 @updateURL https://raw.githubusercontent.com/Coin-233/bgm-vndb-skin/main/bgm-vndb-skin.user.styl
-@version 1.0.3-rc.2
+@version 1.0.3-rc.3
 @description 把vndb的皮肤给抄了过来(
 @author Coin-233
 @preprocessor stylus
@@ -38,6 +38,7 @@
 @var checkbox hideSidepanel "隐藏Sumomo Board" 1
 @var checkbox hidefooterlink "隐藏底部链接" 1
 @var checkbox hideshareBtn "隐藏条目分享按钮" 1
+@var text bio "限制用户介绍高度(0为禁用)" 200
 @var color Chartcolor "评分柱图颜色" #AAAAAA
 
 ==/UserStyle== */
@@ -76,6 +77,27 @@ domain("bangumi.tv") {
 	/* 	自定义评分颜色 */
 	.horizontalChart li a .count {
 		background: Chartcolor
+	}
+	/* 	限制用户自我介绍高度 */
+	if not bio=='0' {
+		div.bio {
+			overflow-y: auto;
+			max-height: bio px;
+		}
+		::-webkit-scrollbar {
+			width: 8px;
+			height: 1px;
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: 4px;
+			box-shadow: inset 0 0 5px rgba(182, 176, 176, 0.2);
+			background: var(--grayedout)
+		}
+		::-webkit-scrollbar-track {
+			box-shadow: none;
+			border-radius: 4px;
+			background: transparent
+		}
 	}
 	if skin=='angel' {
 		:root {
@@ -497,7 +519,7 @@ domain("bangumi.tv") {
 		ul.sideTpcList .row:nth-child(odd),
 		ul.sideTpcList .row:nth-child(2n),
 		#columnNotifyA div.even,
- table td.even{
+		table td.even {
 			background: #ffffff00 !important
 		}
 		#timeline h4.Header,
