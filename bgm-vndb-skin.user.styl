@@ -3,7 +3,7 @@
 @namespace github.com/Coin-233/bgm-vndb-skin
 @homepageURL https://github.com/Coin-233/bgm-vndb-skin
 @updateURL https://raw.githubusercontent.com/Coin-233/bgm-vndb-skin/main/bgm-vndb-skin.user.styl
-@version 1.0.1
+@version 1.0.2
 @description 把vndb的皮肤给抄了过来(
 @author Coin-233
 @preprocessor stylus
@@ -79,6 +79,8 @@ domain("bangumi.tv") {
 	}
 	if skin=='angel' {
 		:root {
+			--maintext: #ddd;
+			--grayedout: #37a;
 			--bodybg: black;
 			--border: #258;
 			--boxbg: rgba(7, 28, 48, 0.737255)
@@ -393,7 +395,14 @@ domain("bangumi.tv") {
 		html #entry_list div.item .content,
 		html #comment_box .text,
 		html #comment_box .text_pm,
-		html .comment_box {
+		html .comment_box,
+		#headerNeue2 #headerSearch select,
+		.searchBar select,
+		div.SimpleSidePanel h2,
+		div.postTopic div.inner div.topic_content,
+		#pageHeader h1,
+		body,
+		#timeline ul li.tml_item .comment {
 			color: var(--maintext)!important
 		}
 		html a.tip,
@@ -420,7 +429,8 @@ domain("bangumi.tv") {
 		div.menu_inner,
 		div.userSynchronize,
 		div.sidePanelHome,
-		div#subject_detail {
+		div#subject_detail,
+		{
 			border: 1px solid var(--border) !important
 		}
 		div.sidePanelHome {
@@ -453,7 +463,8 @@ domain("bangumi.tv") {
 		div.subject_section,
 		div.text,
 		div#comment_list,
-		div#columnSubjectHomeA {
+		div#columnSubjectHomeA,
+		a.chiiBtn {
 			background: var(--boxbg) !important;
 			border: var(--border) !important;
 			border-radius: 15px;
@@ -474,7 +485,15 @@ domain("bangumi.tv") {
 		div#ChartWarpper,
 		div.infobox_expand,
 		div.modifyTool,
-		div#sliderContainer {
+		div#sliderContainer,
+		table.topic_list tr.even,
+		#dock .content,
+		#navNeue2 #navMenuNeue li a.chl,
+		ul.secTab li a,
+		#navMenuNeue li ul,
+		div.light_even,
+		ul.sideTpcList .row:nth-child(odd),
+		ul.sideTpcList .row:nth-child(2n) {
 			background: #ffffff00 !important
 		}
 		#timeline h4.Header,
