@@ -3,7 +3,7 @@
 @namespace github.com/Coin-233/bgm-vndb-skin
 @homepageURL https://github.com/Coin-233/bgm-vndb-skin
 @updateURL https://raw.githubusercontent.com/Coin-233/bgm-vndb-skin/main/bgm-vndb-skin.user.styl
-@version 1.0.3-rc.1
+@version 1.0.3-rc.2
 @description 把vndb的皮肤给抄了过来(
 @author Coin-233
 @preprocessor stylus
@@ -458,7 +458,9 @@ domain("bangumi.tv") {
 		div.menu_inner,
 		div.userSynchronize,
 		div.sidePanelHome,
-		div#subject_detail {
+		div#subject_detail,
+		#navMenuNeue li ul,
+		{
 			background: var(--boxbg) !important;
 		}
 		div.subject_section,
@@ -491,10 +493,11 @@ domain("bangumi.tv") {
 		#dock .content,
 		#navNeue2 #navMenuNeue li a.chl,
 		ul.secTab li a,
-		#navMenuNeue li ul,
 		div.light_even,
 		ul.sideTpcList .row:nth-child(odd),
-		ul.sideTpcList .row:nth-child(2n) {
+		ul.sideTpcList .row:nth-child(2n),
+		#columnNotifyA div.even,
+ table td.even{
 			background: #ffffff00 !important
 		}
 		#timeline h4.Header,
